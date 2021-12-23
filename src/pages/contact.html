@@ -4,20 +4,42 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/style.css" />
         <title>Document</title>
     </head>
 
     <body>
-        <div class="container">
+        <div class="container__contact">
             <nav>
-                <ul>
+                <ul class="main__nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="project.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
-            <h1>Contact</h1>
+            <main>
+                <h1>Contact Me</h1>
+                <h3>Hi there, contact me to ask about my work</h3>
+                <form class="form__contact">
+                    <label for="name">Whats Your Name?</label>
+                    <input class="input" type="text" />
+
+                    <label for="email">Email?</label>
+                    <input class="input" type="email" />
+
+                    <label for="comment">Comment</label>
+                    <textarea
+                        class="comment"
+                        name="comment"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+
+                    <button class="btn_submit" type="submit">Send</button>
+                </form>
+            </main>
+
+            <footer>&copy 2021</footer>
         </div>
     </body>
 </html>
